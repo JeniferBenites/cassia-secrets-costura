@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Heart, Scissors, Users, Clock, WhatsApp, Mail } from 'lucide-react';
+import { Heart, Scissors, Users, Clock, MessageCircle, Mail } from 'lucide-react';
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: '', email: '' });
@@ -189,7 +188,7 @@ const Index = () => {
                   href="#whatsapp-group"
                   className="block w-full bg-green-500 hover:bg-green-600 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  <WhatsApp className="inline-block w-8 h-8 mr-3" />
+                  <MessageCircle className="inline-block w-8 h-8 mr-3" />
                   ENTRAR NO GRUPO DO WHATSAPP
                 </a>
                 
