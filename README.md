@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
 
-## Project info
+# Site de Vendas - Segredos de Cássia Medeiros
 
-**URL**: https://lovable.dev/projects/f0a48cd1-93c5-4d4d-8e24-fd079ad2c308
+## 🎯 Sobre o Projeto
 
-## How can I edit this code?
+Site de vendas moderno, feminino e elegante para curso de costura. Desenvolvido com React + TypeScript + Tailwind CSS, totalmente responsivo e otimizado para conversões.
 
-There are several ways of editing your application.
+## ✨ Características
 
-**Use Lovable**
+- **Design Feminino**: Cores suaves (rosa, lilás, roxo) com elementos elegantes
+- **Contagem Regressiva**: Timer de 3 minutos para criar urgência
+- **Formulário de Captura**: Coleta nome e email dos interessados
+- **Botões de Ação**: WhatsApp (verde) e suporte (laranja) bem destacados
+- **Totalmente Responsivo**: Funciona perfeitamente em todos os dispositivos
+- **SEO Otimizado**: Meta tags e estrutura otimizada para buscadores
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f0a48cd1-93c5-4d4d-8e24-fd079ad2c308) and start prompting.
+## 🚀 Como Publicar no GitHub Pages
 
-Changes made via Lovable will be committed automatically to this repo.
+### Passo 1: Criar Repositório
+1. Acesse [GitHub.com](https://github.com)
+2. Clique em "New repository"
+3. Nome: `site-costura` (ou nome de sua preferência)
+4. Marque como **Public**
+5. Clique em "Create repository"
 
-**Use your preferred IDE**
+### Passo 2: Fazer Upload dos Arquivos
+1. No repositório criado, clique em "uploading an existing file"
+2. Faça upload de todos os arquivos do projeto
+3. Adicione uma mensagem de commit: "Site inicial"
+4. Clique em "Commit changes"
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Passo 3: Configurar GitHub Pages
+1. No repositório, vá em **Settings**
+2. Role até a seção **Pages** (menu lateral)
+3. Em **Source**, selecione **"Deploy from a branch"**
+4. Em **Branch**, selecione **"main"**
+5. Mantenha **"/ (root)"** selecionado
+6. Clique em **Save**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Passo 4: Acessar o Site
+Após alguns minutos, seu site estará disponível em:
+```
+https://seunome.github.io/site-costura/
+```
 
-Follow these steps:
+## 🛠️ Personalizações Necessárias
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. Logo
+No arquivo `src/pages/Index.tsx`, localize o comentário:
+```html
+{/* INSIRA SUA LOGO AQUI */}
+```
+Substitua o ícone de coração pela sua logo.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Link do WhatsApp
+Localize o comentário:
+```html
+{/* INSIRA AQUI O LINK DO GRUPO DO WHATSAPP */}
+```
+Substitua `#whatsapp-group` pelo link do seu grupo.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3. Link de Suporte
+Localize o comentário:
+```html
+{/* INSIRA AQUI O LINK DE SUPORTE */}
+```
+Substitua `#support` pelo seu email ou WhatsApp pessoal.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🎨 Paleta de Cores
+
+- **Fundo**: Degradê rosa/lilás (#fdf2f8 → #f3e8ff → #fdf2f8)
+- **Textos**: Preto (#1f2937), Branco (#ffffff), Azul (#2563eb)
+- **Botão WhatsApp**: Verde vibrante (#22c55e)
+- **Botão Suporte**: Laranja vibrante (#f97316)
+- **Urgência**: Vermelho (#ef4444)
+
+## 📱 Funcionalidades
+
+### Contagem Regressiva
+- **Duração**: 3 minutos (180 segundos)
+- **Reinicia**: A cada acesso à página
+- **Ação ao zerar**: Mostra mensagem e botão para tentar novamente
+
+### Formulário de Captura
+- **Campos**: Nome completo e email
+- **Validação**: Campos obrigatórios
+- **Ação**: Mostra seção de confirmação após envio
+
+### Seção de Confirmação
+- **Aparece**: Após preenchimento do formulário
+- **Botões**: WhatsApp (verde) e Suporte (laranja)
+- **Scroll automático**: Para a seção de confirmação
+
+## 🌐 Tecnologias Utilizadas
+
+- **React 18**: Framework JavaScript
+- **TypeScript**: Tipagem estática
+- **Tailwind CSS**: Estilização utilitária
+- **Lucide React**: Ícones modernos
+- **Vite**: Build tool rápido
+
+## 📈 Otimizações Implementadas
+
+- **Performance**: Código otimizado e leve
+- **SEO**: Meta tags completas
+- **UX**: Transições suaves e feedback visual
+- **Mobile First**: Design responsivo prioritário
+- **Acessibilidade**: Contraste adequado e navegação por teclado
+
+## 🔧 Desenvolvimento Local
+
+Para desenvolvimento local:
+
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O site estará disponível em `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📞 Suporte
 
-**Use GitHub Codespaces**
+Para dúvidas sobre personalização ou implementação, consulte a documentação do React e Tailwind CSS.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f0a48cd1-93c5-4d4d-8e24-fd079ad2c308) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Desenvolvido com 💜 para converter visitantes em clientes**
